@@ -4,8 +4,8 @@
     "description": "This is an example app used to showcase Cypress.io testing",
     "main": "index.js",
     "scripts": {
-        "cy:run": "cypress run",
-        "cy:open": "cypress open"
+        "run": "cypress run",
+        "open": "cypress open"
     },
     "devDependencies": {
         "cypress": "^12.17.4"

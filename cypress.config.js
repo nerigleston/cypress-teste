@@ -1,12 +1,19 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   //chromeWebSecurity: false,
   //defaultCommandTimeout: 20000,
   //pageLoadTimeout: 30000,
-  //video: false,  
+  //video: false,
   e2e: {
-    baseUrl: 'https://google.com/',
+    // baseUrl: 'https://www.google.com',
     //slowTestThreshold: 1000,
+  },
+
+  component: {
+    devServer: {
+      framework: "react",
+      bundler: "vite",
+    },
   },
 });
